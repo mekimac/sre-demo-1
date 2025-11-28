@@ -17,8 +17,8 @@ spec:
       containers:
         - name: sre-demo-container
           # TODO: update this image later after we push to a registry
-          image: sre-demo-app:local
-          imagePullPolicy: IfNotPresent
+          image: sre-demo-app:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
           # Kubernetes will periodically check this to see if the pod is alive
