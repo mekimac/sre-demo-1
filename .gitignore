@@ -7,6 +7,7 @@ terraform/.terraform/
 terraform/terraform.tfstate
 terraform/terraform.tfstate.backup
 terraform/*.tfvars
+terraform/*.tfplan
 terraform/kubeconfig
 
 # Ignore environment files
