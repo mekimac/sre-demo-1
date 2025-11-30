@@ -1,9 +1,20 @@
 output "resource_group_name" {
-  description = "Name of the resource group"
-  value       = azurerm_resource_group.rg.name
+  value = azurerm_resource_group.rg.name
 }
 
-output "resource_group_location" {
-  description = "Location of the resource group"
-  value       = azurerm_resource_group.rg.location
+output "aks_name" {
+  value = azurerm_kubernetes_cluster.aks.name
+}
+
+output "aks_kube_config" {
+  value     = azurerm_kubernetes_cluster.aks.kube_config_raw
+  sensitive = true
+}
+
+output "acr_login_server" {
+  value = azurerm_container_registry.acr.login_server
+}
+
+output "postgres_fqdn" {
+  value = azurerm_postgresql_flexible_server.postgres.fqdn
 }

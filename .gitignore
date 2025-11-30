@@ -1,0 +1,17 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore Terraform state & local files
+terraform/.terraform/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/*.tfvars
+terraform/kubeconfig
+
+# Ignore environment files
+.env
+
+# Ignore VSCode or other editor settings
+.vscode/
+*.log
