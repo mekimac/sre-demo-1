@@ -6,7 +6,7 @@ variable "project_name" {
 
 variable "location" {
   type        = string
-  default     = "eastus" # Dallas-ish region; you can change if you want; changed to eastus due to issues in southcentralus
+  default     = "southcentralus" # Dallas-ish region; you can change if you want; changed to eastus due to issues in southcentralus; back to southcentralus
   description = "Azure region for all resources"
 }
 
@@ -24,7 +24,7 @@ variable "aks_node_count" {
 
 variable "aks_node_size" {
   type        = string
-  default     = "Standard_B2s_v2" # small, cost-friendly VM
+  default     = "Standard_D2s_v3" # small, cost-friendly VM
   description = "VM size for AKS nodes"
 }
 
