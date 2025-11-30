@@ -6,8 +6,8 @@ variable "project_name" {
 
 variable "location" {
   type        = string
-  default     = "southcentralus" # Dallas-ish region; you can change if you want
-  description = "Azure region"
+  default     = "eastus" # Dallas-ish region; you can change if you want; changed to eastus due to issues in southcentralus
+  description = "Azure region for all resources"
 }
 
 variable "resource_group_name" {
