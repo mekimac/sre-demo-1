@@ -16,3 +16,7 @@ terraform/kubeconfig
 # Ignore VSCode or other editor settings
 .vscode/
 *.log
+
+#Ignore personal notes file
+SRE_Demo_Project-notes*
+~*
