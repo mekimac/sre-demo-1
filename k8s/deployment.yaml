@@ -5,7 +5,7 @@ metadata:
   labels:
     app: sre-demo-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: sre-demo-app
@@ -15,9 +15,9 @@ spec:
         app: sre-demo-app
     spec:
       containers:
-        - name: sre-demo-container
+        - name: sre-demo-app
           # TODO: update this image later after we push to a registry
-          image: sre-demo-app:latest
+          image: sredemoacr01.azurecr.io/sre-demo-app:v0.1.0
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
